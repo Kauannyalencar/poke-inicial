@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke choose</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scroll.css">
+
+  
+</head>
+
+<body>
+    <header>
+      <img class="menu-icon" src="img/menu_FILL0_wght400_GRAD0_opsz40.svg" alt="icon do menu">
+          <h1>Oak's Lab</h1>
+          <img src="img/pokebola-removebg-preview.png" alt="">
+    </header>
+    <div class="container">
+        <h1 id="welcome">Bem vindo ao mundo pokémon.</h1>
+        <p id="text-init">Escolha um dos pokémons para iniciar sua jornada.</p>
+        <div class="pokemons">
+            <ul class="lista">
+                <li class="card" data-poke="squirtle">
+                    <h3>Squirtle</h3>
+                    <img class="pokebola" src="img/pokeball.png" alt="">
+                    <hr class="base-sombra">
+
+                </li>
+                <li class="card" data-poke="bulbasaur">
+                    <h3>Bulbasaur</h3>
+                    <img class="pokebola" src="img/pokeball.png" alt="">
+                    <hr class="base-sombra">
+                </li>
+                <li class="card" data-poke="charmander">
+                    <h3>Charmander
+                    </h3>
+                    <img class="pokebola" src="img/pokeball.png" alt="">
+                    <hr class="base-sombra">
+                </li>
+            </ul>
+        <div class="pokemons-hidden">
+            <ul>
+                <li>
+                    <div class="informacoes" data-poke="squirtle">
+                        <img class="gif" src="img/squirtle.gif" alt="">
+                        <span class="tipo agua">Água</span>
+                        <p class="descricao">Ele se abriga em sua concha, em seguida, contra-ataca com jatos de água em
+                            cada oportunidade.</p>
+                        <div class="escolherPokemon">
+                            <p>Deseja escolher este Pokémon?</p>
+                            <div class="botoes-escolha">
+                                <button>Sim</button>
+                                <button>Não</button>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="informacoes" data-poke="bulbasaur">
+                        <img class="gif" src="img/bulbasaur.gif" alt="">
+                        <span class="tipo grama">Grama</span>
+                        <p class="descricao">Há uma semente em suas costas. Ao absorver os raios do sol, a semente
+                            cresce progressivamente.</p>
+                        <div class="escolherPokemon">
+                            <p>Deseja escolher este Pokémon?</p>
+                            <div class="botoes-escolha">
+                                <button>Sim</button>
+                                <button>Não</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="informacoes" data-poke="charmander">
+                        <img class="gif" src="img/charmander.gif" alt="">
+                        <span class="tipo fogo">Fogo</span>
+                        <p class="descricao">
+                            Tem preferencia por coisas quentes. A chama em sua calda indica sua força vital. Quanto mais
+                            saudável Charmande for, mais intensa sua chama queimar</p>
+                        <div class="escolherPokemon">
+                            <p>Deseja escolher este Pokémon?</p>
+                            <div class="botoes-escolha">
+                                <button>Sim</button>
+                                <button>Não</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="choosen">
+            <p id="text">Sua escolha foi <span class="poke-choosen"></span>. Boa sorte na sua jornada!</p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
