@@ -30,6 +30,7 @@ const span = document.querySelector(".poke-choosen")
 card.forEach((cartao, index) => {
     const nome = card.innerText;
     let imgPoke = document.createElement('img')
+    imgPoke.src = ''
     cartao.addEventListener("click", () => {
         if (cartao.dataset.poke === pokeAtivo[index].dataset.poke) {
 
@@ -42,18 +43,19 @@ card.forEach((cartao, index) => {
         escolha.forEach((btn, indece) => {
             btn.addEventListener("click", () => {
                 if (btn.textContent === "Sim") {
-                    console.log("click");
                     pokeAtivo[index].classList.remove("ativo");
                     console.log(pokeAtivo[index]);
                     pInit.textContent = `Sua escolha foi ${card[index].innerText}! Boa sorte na sua jornada!`
-                    imgPoke.src = `img/${pokeAtivo[index].dataset.poke}.gif`
+                    console.log(imgPoke.src = `img/${pokeAtivo[index].dataset.poke}.gif`)
+                    pInit.classList.add("grade")
+                    pInit.appendChild(imgPoke)
                 } else {
                     console.log("No");
                     pokeAtivo[index].classList.remove("ativo");
                     card.forEach(cartao => {
                         cartao.style.display = 'flex'
                     })
-                    pInit.insertAdjacentElement("beforebegin", imgPoke)
+                   
                 }
             })
         })
