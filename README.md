@@ -5,3 +5,4 @@
 - HTML
 - CSS
 - JS
+<p><a href="https://kauannyalencar.github.io/poke-inicial/">Live version</a></p>
